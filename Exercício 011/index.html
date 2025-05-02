@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Favicon/HTML5 Icon.ico" type="image/x-icon">
+    <title>Volta & Midias em HTML 5</title>
+</head>
+<body>
+    
+    <h1>Voltei pra programaçao</h1>
+    <p>
+        Agora eu vou dar uma revisada em algumas coisas:
+    </p>
+    <ul type = "circle">
+        <li>se liga nessa <strong>lista nao ordenada</strong></li>
+        <li>Estou <abbr title="Essa e a tal da revisada braba">revisando</abbr></li>
+    </ul>
+    <ol>
+        <li><code>Mais um</code> (usei o &lt;code&gt; nesse "mais um")</li>
+        <li>tipo de lista</li>
+    </ol>
+    <hr>
+    <h1>
+        Imagem Dinamica
+    </h1>
+    <p>
+        Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto_p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="Imagens/foto_m.png" type="image/png">
+        <img src="Imagens/foto_g.png" alt="Imagem Dinamica">
+    </picture>
+    <!-- Sempre segundo essa formula de: Base com imagem maior e em cima uma versao dela menor.-->
+    <h2>
+        OBS: Tem comentarios cruciais no codigo sobre a tag &lt;picture&gt;.
+    </h2>
+
+
+
+    <h1>
+        Reproduçao de Audio
+    </h1>
+    <p>
+        Essa e a forma mais simples e limitada de se colocar um audio no navegador
+    </p>
+    <audio src="midia/pieruun.mp3" controls></audio>
+    
+    <!-- O parametro "Autoplay" funciona de vez em quando em alguns navegadores; O parametro "Control" serve para mostrar o controle de audio no site -->
+    <!-- Existem navegadores que nao tem compatibilidade com todos os tipos de audio (MP3 OGG WAV) -->
+    
+    <p>
+        Essa e a segunda forma de se colocar audio em um navegador
+    </p>
+    <audio preload="none" controls loop>
+        <source src="midia/tekoda.mp3" type="audio/mpeg">
+        <source src="midia/tekoda.wav" type="audio/wav">
+        <source src="midia/tekoda.ogg" type="audio/ogg">
+        <p>
+            Infelizmente seu navegador nao e compativel com nenhum tipo de audio, <a href="midia/tekoda.mp3">Clique aqui</a> para baixar
+        </p>
+    </audio>
+
+    <!-- o navegador vai ler de cima pra baixo, por isso a ordem importa -->
+    <!-- o valor "Loop" significa que vai loopar o audio -->
+    <!-- No parametro "Preload": Se usarmos o "Auto" ele vai consideirar que o site carregou completamente so quando carregar TODOS os audios; se usarmos "Metadata" vai carregar somente informaçoes sobre o audio mas nao ele em si, somente quando clicar no play; se usarmos o "None" ele nao ira carregar nada, somente se o usuario clicar no play (deixa o site mais leve)
+    OBS: Se estiver vazio significara "Auto" -->
+
+    <p>
+        Arquivos de midia na navegaçao <strong>TEM QUE SER LEVES</strong>, arquivos maiores serao para download
+    </p>
+    <h2>
+        OBS: Tem comentarios sobre todos os tipos de arquivos de midia no site. 
+    </h2>
+
+</body>
+</html>

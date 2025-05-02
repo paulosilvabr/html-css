@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Favicon/HTML5 Icon.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+
+        body {
+            background-color: #101218;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 1.2em
+        }
+
+        ul#tabelas {
+            background-color: gray;
+            color: white;
+            box-shadow: 5px 5px 8px 1px rgba(0, 0, 0, 0.322);
+            border-radius: 10px;
+            margin: 0px;
+            padding: 5px 0px 5px 40px;
+        }
+
+        header {
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+        }
+
+        header > h1 {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 3em;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #ffc57a86;
+            box-shadow: 5px 4px 5px 1px #9b7a4b86;
+            border-radius: 5px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            font-weight: bolder;
+            margin-right: 30px;
+            color: #e76800;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            background-color: #ff93074d;
+
+        }
+
+        main {
+            background-color: whitesmoke;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        main > h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        footer {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        footer > p > a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer > p > a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+
+    header = cabeçalho
+    nav = navegation
+    main = principal
+    footer = rodapé
+
+    -->
+
+    <header>
+
+        <h1>
+            Ensinando Todas as Tags da Aula
+        </h1>
+
+        <nav>
+            <a href="https://www.instagram.com/joab_prs/" target="_blank" rel="external, me">Link</a>
+            <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-16-aula-4-grouping-tags-em-html5/" target="_blank" rel="external>Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>
+            Tags da Aula
+        </h1>
+
+        <section>
+            <article>
+                <h2>
+                    &lt;header&gt;
+                </h2>
+                <p>
+                    Significa "Cabeçalho" e é feita pra servir de cabeçalho (obviamente). Da pra colocar barras de pesquisas, menus ou até apresentações.
+                </p>
+                <aside>
+                    <p>
+                        <strong>Explicação do google:</strong> A tag &lt;header&gt; serve para representar o cabeçalho de uma página web no HTML. É um elemento que pode conter vários elementos de cabeçalho, como: Um ou mais elementos de título (&lt;h1&gt; - &lt;h6&gt;), Um logotipo ou ícone, Link de navegação, Um formulário de pesquisa.
+                    </p>
+                </aside>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2>
+                    &lt;nav&gt;
+                </h2>
+                <p>
+                    "Navegation" significa navegação e é pra ser uma seção de navegação pelo site.
+                </p>
+                <aside>
+                    <p>
+                        <strong>Explicação do google:</strong> A tag &lt;nav&gt; do HTML5 serve para indicar uma seção de uma página com links de navegação, apontando para outras páginas ou para outras áreas da página
+                    </p>
+                </aside>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2>
+                    &lt;main&gt;
+                </h2>
+                <p>
+                    Significa "Principal", é o conteudo principal do site.
+                </p>
+                <aside>
+                    <p>
+                        <strong>Explicação do google:</strong> A tag &lt;main&gt; do HTML serve para identificar o conteúdo principal de uma página web. Ela deve ser usada dentro do elemento &lt;body&gt; e deve ser única na página. 
+                    </p>
+                </aside>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2>
+                    &lt;section&gt;
+                </h2>
+                <p>
+                    Significa "seção" e serve pra agrupar informação ou tags, numa vibe "contêiner" das ideia.
+                </p>
+                <aside>
+                    <p>
+                        <strong>Explicação do google:</strong> A tag &lt;section&gt; do HTML5 serve para marcar seções de conteúdo em uma página, agrupando-as de forma lógica e separando a informação em áreas diferentes.
+                    </p>
+                </aside>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2>
+                    &lt;article&gt;
+                </h2>
+                <p>
+                    Significa "artigo" e eu n entendi muito bem as funcionalidades disso, vai ver sou mei burro
+                </p>
+                <aside>
+                    <p>
+                        <strong>Explicação do google:</strong> A tag HTML &lt;article&lg; serve para marcar um conteúdo que é independente em uma página, aplicação, site ou documento. Esse conteúdo pode ser reutilizado ou distribuído de forma isolada, como por exemplo em sindicação. Alguns exemplos de conteúdos que podem ser marcados com a tag &lt;article&gt; são: Post em um fórum, Artigo de uma revista ou jornal, Matéria em um blog, Comentário de um usuário, Widget ou gadget interativo.
+                    </p>
+                </aside>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2>
+                    &lt;aside&gt;
+                </h2>
+                <p>
+                    Significa "a parte" "de lado", e pelo o que eu entendi é um conteudo que tem relação com o conteúdo principal.
+                </p>
+                <aside>
+                    <p>
+                        <strong>Explicação do google:</strong> A tag &lt;aside&gt; em HTML define um bloco de conteúdo que se relaciona com o conteúdo principal de uma página. Normalmente, o conteúdo é exibido na lateral da página e pode conter
+                    </p>
+                </aside>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2>
+                    &lt;footer&gt;
+                </h2>
+                <p>
+                    Significa "rodapé" e é o lugar pra colocar informações sobre quem fez o site ou da empresa.
+                </p>
+                <aside>
+                    <p>
+                        <strong>Explicação do google:</strong> A tag &lt;footer&gt; em HTML serve para marcar a área inferior de uma página, ou seja, o rodapé. O rodapé é normalmente utilizado para incluir informações como:
+                    </p>
+                    <ul id="tabelas">
+                        <li>Endereço</li>
+                        <li>Contato</li>
+                        <li>Link pra páginas importantes</li>
+                    </ul>
+                </aside>
+            </article>
+        </section>
+        
+    </main>
+
+    <footer>
+            <p>
+                Conhecimento adquirido pelo <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-16-aula-4-grouping-tags-em-html5/" target="_blank" rel="nofollow">Curso em Vídeo</a>
+            </p>
+    </footer>
+
+</body>
+</html>

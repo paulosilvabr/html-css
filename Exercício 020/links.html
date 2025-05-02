@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/CSS3 Icon.ico" type="image/x-icon">
+    <title>Links Personalizados</title>
+    <style>
+
+        /*
+
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+
+
+        */
+
+        body {
+            font: normal lighter 1.2em sans-serif 
+        }
+        a { /* Esse n tem pseudoclasses */
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited { /* Esse é pra quando um site ja foi visitado */
+            color: darkred;
+        }
+        
+        a:hover { /* Esse é pra quando o mouse ta passando por cima */
+            text-decoration: underline;
+            color: rgb(0, 136, 255);
+        }
+
+        a:active { /*  Esse é pra quando vc clica */
+            color: yellow;
+        }
+
+        .especial {
+            background-color: aqua;
+        }
+
+        a.especial::after { 
+            content: ' ←';
+        }
+        
+        /* Coloquei "a" só pra vc ver que pode colocar ou não */
+
+        .especial::before {
+            content: '→ ';
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1> Personalizando Links </h1>
+    <ul>
+        <li><a href="https://github.com/"target="_blank" rel="external">Github</a></li>
+
+        <li><a href="https://www.youtube.com/" target="_blank" rel="external" class="especial">Youtube</a></li>
+
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/" target="_blank" rel="external">Link da aula</a></li>
+    </ul>
+
+</body>
+</html>

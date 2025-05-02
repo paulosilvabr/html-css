@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/CSS3 Icon.ico" type="image/x-icon">
+    <title>Exemplo de Hover</title>
+    <style>
+
+        body {
+            font: normal lighter 1.5em arial
+        }
+
+        div:hover > p {
+            display: block;
+            width: 220px;
+            color: aliceblue;
+            background-color: red;
+        }
+
+        div > p {
+            display: none;
+        }
+        div:hover {
+            color: red;
+        }
+
+        div {
+            width: 220px;
+        }
+
+        /*
+        
+        ">" significa "child", ou seja, ta falando que "p" é filho da "div"
+        
+        "Hover" significa "quando o mouse passar por cima"
+
+        */
+
+    </style>
+</head>
+<body>
+    
+    <h1>
+        Exemplo de Hover
+    </h1>
+    <p>
+        Passe o mouse no texto abaixo
+    </p>
+    <div>
+        Passe o mouse aqui
+        <p> Texto escondido!!! </p>
+    </div>
+    <p>
+        Fim do Projeto
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="HTML5 Icon.ico" type="image/x-icon">
+    <title>Links</title>
+</head>
+<body>
+    
+    <h1>
+        Trabalhando com Links
+    </h1>
+    <h2>
+        Link Externo
+    </h2>
+    <p>
+        Eu gosto de cinema, e tem um <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjr4IW9x5WFAxUaqpUCHdhuDd8QFnoECBsQAQ&url=https%3A%2F%2Fwww.youtube.com%2F%40DanaelFernandes&usg=AOvVaw3VtHcrMEcHUCv0sQ1ph7wk&opi=89978449" target="_blank" rel="external">canal que eu gosto muito</a> sobre o tema
+    </p>
+    <!-- <a> e a tag de Ancora; <target="_blank"> e o que faz abrir outra aba no navergador sem sobrepor o meu site; <rel="external"> fala pro navegador que essa ancora e um link externo -->
+    <p>
+        E esse é o <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjr4IW9x5WFAxUaqpUCHdhuDd8Q6F56BAgIEAE&url=https%3A%2F%2Ftwitter.com%2FDanaelFernandes%3Fref_src%3Dtwsrc%255Egoogle%257Ctwcamp%255Eserp%257Ctwgr%255Eauthor&usg=AOvVaw30hJUlZzrTiC6MjONWIcy7&opi=89978449" target="_blank" rel="external">Twitter</a> do cara 
+    </p>
+    <!-- No Target e obrigatorio colocar (http://) para ir para um site externo -->
+    <h2>
+        Link Interno
+    </h2>
+    <p>
+        Essa e a <a href="pag_02.html" target="_self">pagina 2</a>
+    </p>
+    <p>
+        Essa e a <a href="Paginas/pag_03.html" target="_self">pagina 3</a>
+    </p>
+    <!-- O parametro <target="_self"> Serve para mostrar ao navegador que esse e um link do proprio site -->
+    <h2>
+        Link de Download
+    </h2>
+    <p>
+        Clique em um link para baixar o livro <abbr title="Mistborn: The Final Empire">Mistborn</abbr>
+    </p>
+    <ul>
+        <li><a href="Livro/Mistborn - The Final Empire.pdf" download="Mistborn - The Final Empire.pdf" type="application/pdf">Livro pdf</a></li>
+        <li><a href="Livro/Mistborn - The Final Empire.rar" download="Mistborn - The Final Empire" type="application/zip">Livro zip</a></li>
+    </ul>
+    <!-- o Elemento "download" serve pra dar o nome do arquivo quando baixar-->
+    <!-- https://www.iana.org/assignments/media-types/media-types.xhtml esse e o link para ver todos o media types para colocar no parametro <type> (Segure Ctrl e clique para entrar no site)-->
+    <h3>
+        OBS: Tem comentarios nesse codigo
+    </h3>
+</body>
+</html>

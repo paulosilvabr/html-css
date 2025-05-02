@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Favicon/HTML5 Icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Favicon/" type="image/x-icon">
+    <title>Videos em HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>
+        Inserindo Videos
+    </h1>
+    <p>
+        Forma simples de se colocar um video em um site, e a mais simples.
+    </p>
+
+    <video src="midia/retrofuturismo-no-follout-gaveta.mp4" width="560px" height="315px" poster="imagens/Thumbnaill.jpg" controls loop></video>
+
+    <p>
+        Essa e a segunda forma de se colocar um video em um site, e a mais completa usando &lt;source&gt;.
+    </p>
+    <video width="560xp" height="315" controls poster="imagens/Thumbnaill 2.jpg" loop>
+
+        <source src="midia/os-problemas-do-cybertruck.mp4" type="video/mp4">
+        <source src="midia/os-problemas-do-cybertruck.ogv" type="video/ogv">
+        <source src="midia/os-problemas-do-cybertruck.m4v" type="video/m4v">
+        <source src="midia/os-problemas-do-cybertruck.webm" type="video/webm">
+        <p>Seu navegador nao e compativel com arquivos de video.</p>
+
+    </video>
+    <!-- O site le essa tag <Video> de cima para baixo, por isso tente o mais leve primeiro e vai colocando os mais pesados depois a baixo -->
+    <!-- Widht = Largura | height = Altura | Poster = Thumbnail do video-->
+    <p>
+        Essa e uma forma de incorporaçao de videos em site onde <strong>Consome Largura de Banda do Cliente</strong>, fazendo sair mais caro o serviço de hospedagem que ele contratou.
+    </p>
+    <h1>
+        Videos Do Youtube
+    </h1>
+    <p>
+        Essa e uma forma de incorporaçao de videos do Youtube, onde consome somente a largura de banda da hospedagem do proprio Youtube. Mas o video vai ser visto por qualquer outra pessoa, seja ele nao listado ou listado no Youtube.
+    </p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/M_X4l2qYUA4?si=kW6dA4lASx2YppsF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>
+        Videos Do Vimeo
+    </h1>
+    <p>
+        Essa e uma forma de incorporaçao de video do Vimeo, onde o codex nao e melhor que o do youtube (pode ser ruim assistir se nao tiver uma internet boa), porem com esse serviço de hospedagem pode fazer com que outras pessoas que nao assinam o serviço do cliente nao tenha acesso aos videos. O Vimeo tem uma melhor qualidade de imagem para incorporaçao de sites.
+    </p>
+
+    <iframe src="https://player.vimeo.com/video/177118397?h=52d138b00e&title=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <h2>
+        OBS: Tem comentários nos códigos e os estilos foram colocados depois.
+    </h2>
+</body>
+</html>

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/*  
+
+em HTML -> id="" = # <- em CSS (W3C recomenda somente 1)
+em HTML -> class = . <- em CSS (W3C fala que pode vários)
+
+*/
+
+body {
+    background-color: #A6D8DB;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #0AA3AB;
+    text-decoration: underline;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #0AA3AB;
+    color: white;
+}
+
+h2 {
+    color: #0CC3CD;
+}
+
+.basico {
+    color: #0ccd2c;
+}
+
+.intermediario {
+    color: #c0cd0c;
+}
+
+.avancado {
+    color: #cd0c0c;
+}
+
+.destaque {
+    background-color:#d1dba6 ;
+}

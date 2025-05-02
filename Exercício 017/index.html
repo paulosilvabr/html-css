@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Favicon/CSS3 Icon.ico" type="image/x-icon">
+    <title>Fonte em CSS</title>
+    <style>
+        body {
+
+          font-family: Arial, Helvetica, sans-serif;
+
+          /* ele vai lendo da esquerda pra direita: 1º arial, 2º helvetica, 3º qualquer fonte sem serifa (san-serife em português é sem serifa) */
+
+          font-size: 1.2em;
+
+          /* 
+          Medidas Absolutas:
+            cm, mm, in, px, pt, pc
+
+          Medidas Relativas:
+          em, ex, rem, vw, vh, %
+
+          Recomendação Oficial da W3C: 
+          px e em
+
+          1em = 16px
+
+          sempre trabalhar em "em" porque é relativa ao pixel, então em qualquer tela vai se manter a legibilidade.
+          */
+        }
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            /* 
+            Shorthand para facilitar isso e n ocupar 4 linha de cídigo. É só colocar nessa sequência:
+            — font-style -> font-weight -> font-size -> font-family
+            */
+            font: italic lighter 1.5em 'Times New Roman', serif 
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>
+        Trabalhando com fonte
+    </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatum sit ut ratione suscipit fuga alias architecto assumenda ipsum, ducimus ea illo quas a voluptates, inventore commodi explicabo neque aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, harum enim culpa cupiditate assumenda repellendus amet ipsam? Error eius sit, recusandae labore aliquam accusamus ex doloribus voluptas optio voluptatibus quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, repellat assumenda, facere perspiciatis culpa debitis delectus impedit quaerat alias laboriosam minus dolores suscipit nemo! Iusto velit eos architecto asperiores soluta!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore pariatur nam, dolorem exercitationem enim corporis saepe accusamus ducimus eos sint quam, ea nemo libero quaerat, sed voluptas magnam! Nostrum, tenetur?
+    </p>
+    <h2>
+        Subtítulos do Execício
+    </h2>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo amet quibusdam ad laboriosam praesentium accusantium asperiores officiis quos aliquid. Non repellendus, aut molestias nostrum magnam alias rerum culpa omnis asperiores?
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo amet quibusdam ad laboriosam praesentium accusantium asperiores officiis quos aliquid. Non repellendus, aut molestias nostrum magnam alias rerum culpa omnis asperiores?
+    </p>
+
+</body>
+</html>
