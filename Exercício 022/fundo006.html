@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo Fixo de Tela</title>
+    <style>
+
+        body {
+            /*
+            background-color: black;
+            background-image: url(images/wallpaper003.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            */
+
+            /* 
+                Shorthand Background (de acordo com a W3C)
+
+                color > image > position > repeat > *size* > attachment
+            */
+
+            background: black url(images/wallpaper002.jpg) center fixed;
+            background-size: cover;
+
+            /* Na prática só assim o size funciona */
+        }
+
+        main {
+            border: 1px solid darkgreen;
+            max-width: 700px;
+            padding: 30px;
+            text-align: justify;
+            background-color: white;
+            border-radius: 10px;
+            margin: auto;
+        }
+        p {
+            text-indent: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <h1>Teste de um Site de Verdade</h1>
+
+        <table border="1" style="border-collapse: collapse;">
+            <tr>
+              <th style="padding: 5px;">Conceito</th>
+              <th style="padding: 5px;">Símbolo</th>
+              <th style="padding: 5px;">Exemplo</th>
+              <th style="padding: 5px;">O que faz?</th>
+            </tr>
+            <tr>
+              <td style="padding: 5px;">Pseudoclasse</td>
+              <td style="padding: 5px;"><code>:</code></td>
+              <td style="padding: 5px;"><code>a:hover</code></td>
+              <td style="padding: 5px;">Aplica estilo baseado no estado do elemento (ex: quando o mouse passa em cima).</td>
+            </tr>
+            <tr>
+              <td style="padding: 5px;">Pseudoelemento</td>
+              <td style="padding: 5px;"><code>::</code></td>
+              <td style="padding: 5px;"><code>p::first-letter</code></td>
+              <td style="padding: 5px;">Permite estilizar partes específicas de um elemento (ex: primeira letra de um parágrafo).</td>
+            </tr>
+            <tr>
+              <td style="padding: 5px;">Seletor Universal</td>
+              <td style="padding: 5px;"><code>*</code></td>
+              <td style="padding: 5px;"><code>* { margin: 0; }</code></td>
+              <td style="padding: 5px;">Seleciona todos os elementos da página.</td>
+            </tr>
+            <tr>
+              <td style="padding: 5px;">Charset</td>
+              <td style="padding: 5px;"><code>@</code></td>
+              <td style="padding: 5px;"><code>@charset "UTF-8";</code></td>
+              <td style="padding: 5px;">Define a codificação de caracteres do CSS para suportar acentos e símbolos.</td>
+            </tr>
+            <tr>
+              <td style="padding: 5px;">:root (variáveis)</td>
+              <td style="padding: 5px;"><code>:root</code></td>
+              <td style="padding: 5px;"><code>:root { --cor: azul; }</code></td>
+              <td style="padding: 5px;">Declara variáveis CSS globais que podem ser reutilizadas no estilo da página.</td>
+            </tr>
+          </table>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cumque illo autem cum at odio, saepe harum fugiat commodi ipsum quis doloribus amet exercitationem consequatur eveniet sunt quod atque accusantium!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cumque illo autem cum at odio, saepe harum fugiat commodi ipsum quis doloribus amet exercitationem consequatur eveniet sunt quod atque accusantium!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cumque illo autem cum at odio, saepe harum fugiat commodi ipsum quis doloribus amet exercitationem consequatur eveniet sunt quod atque accusantium!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cumque illo autem cum at odio, saepe harum fugiat commodi ipsum quis doloribus amet exercitationem consequatur eveniet sunt quod atque accusantium!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cumque illo autem cum at odio, saepe harum fugiat commodi ipsum quis doloribus amet exercitationem consequatur eveniet sunt quod atque accusantium!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cumque illo autem cum at odio, saepe harum fugiat commodi ipsum quis doloribus amet exercitationem consequatur eveniet sunt quod atque accusantium!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cumque illo autem cum at odio, saepe harum fugiat commodi ipsum quis doloribus amet exercitationem consequatur eveniet sunt quod atque accusantium!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cumque illo autem cum at odio, saepe harum fugiat commodi ipsum quis doloribus amet exercitationem consequatur eveniet sunt quod atque accusantium!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cumque illo autem cum at odio, saepe harum fugiat commodi ipsum quis doloribus amet exercitationem consequatur eveniet sunt quod atque accusantium!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cumque illo autem cum at odio, saepe harum fugiat commodi ipsum quis doloribus amet exercitationem consequatur eveniet sunt quod atque accusantium!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cumque illo autem cum at odio, saepe harum fugiat commodi ipsum quis doloribus amet exercitationem consequatur eveniet sunt quod atque accusantium!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cumque illo autem cum at odio, saepe harum fugiat commodi ipsum quis doloribus amet exercitationem consequatur eveniet sunt quod atque accusantium!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cumque illo autem cum at odio, saepe harum fugiat commodi ipsum quis doloribus amet exercitationem consequatur eveniet sunt quod atque accusantium!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam cumque illo autem cum at odio, saepe harum fugiat commodi ipsum quis doloribus amet exercitationem consequatur eveniet sunt quod atque accusantium!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ex accusantium numquam officia quo, facilis maxime, ipsam ea quia laboriosam expedita laudantium, obcaecati praesentium distinctio eius nemo qui voluptatem tenetur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ex accusantium numquam officia quo, facilis maxime, ipsam ea quia laboriosam expedita laudantium, obcaecati praesentium distinctio eius nemo qui voluptatem tenetur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ex accusantium numquam officia quo, facilis maxime, ipsam ea quia laboriosam expedita laudantium, obcaecati praesentium distinctio eius nemo qui voluptatem tenetur!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ex accusantium numquam officia quo, facilis maxime, ipsam ea quia laboriosam expedita laudantium, obcaecati praesentium distinctio eius nemo qui voluptatem tenetur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ex accusantium numquam officia quo, facilis maxime, ipsam ea quia laboriosam expedita laudantium, obcaecati praesentium distinctio eius nemo qui voluptatem tenetur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ex accusantium numquam officia quo, facilis maxime, ipsam ea quia laboriosam expedita laudantium, obcaecati praesentium distinctio eius nemo qui voluptatem tenetur!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ex accusantium numquam officia quo, facilis maxime, ipsam ea quia laboriosam expedita laudantium, obcaecati praesentium distinctio eius nemo qui voluptatem tenetur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ex accusantium numquam officia quo, facilis maxime, ipsam ea quia laboriosam expedita laudantium, obcaecati praesentium distinctio eius nemo qui voluptatem tenetur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ex accusantium numquam officia quo, facilis maxime, ipsam ea quia laboriosam expedita laudantium, obcaecati praesentium distinctio eius nemo qui voluptatem tenetur!</p>
+    </main>
+
+</body>
+</html>
