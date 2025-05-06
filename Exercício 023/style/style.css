@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+@font-face {
+    font-family:'poem' ;
+    src: url(../fonts/Sriracha-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --title-font: Passion One, sans-serif;
+    --poem-font: 'poem', helvetica, serif
+    --footer-font: arial, helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background-color: white;
+}
+
+footer {
+    color: white;
+}
