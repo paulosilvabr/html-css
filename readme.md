@@ -1,9 +1,8 @@
 # html-css
-<h1>Sobre o Repositório</h1>
+<strong>Sobre o Repositório</strong>
 
 Exercícios de HTM5 e CSS3 a fins de descobrir novas maneiras de resolver problemas e melhorar como programador front-end.
-
-<h2>Nomenlatura das Pastas</h2>
+<strong>Nomenlatura das Pastas</strong>
 Exemplo: ex021dc
 
 <ul>
