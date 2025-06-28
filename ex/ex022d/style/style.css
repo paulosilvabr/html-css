@@ -15,14 +15,33 @@
 }
 
 :root {
-    --title-font: Passion One, sans-serif;
-    --poem-font: 'poem', helvetica, serif
-    --footer-font: arial, helvetica, sans-serif;
+    --title-font: 'Passion One', sans-serif;
+    --poem-font: 'poem', helvetica, serif;
+    --default-font: Verdana, Tahoma, sans-serif;
 }
 
+
 html, body {
-    min-width: 100vh;
+    min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--default-font);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+    font-family: var(--title-font);
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
 }
 
 a {
@@ -40,6 +59,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 4vw;
+    font-family: var(--poem-font);
 }
 
 section.normal {
@@ -53,24 +74,11 @@ section.image {
 }
 
 section.image > p {
-    width: 400px;
+    width: 50vw;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.253);
 }
 
-header {
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-header > h1 {
-    padding-top: 50px;
-    font-variant: small-caps;
-}
-
-header > p {
-    padding-bottom: 50px;
-}
 
 footer {
     background-color: black;
