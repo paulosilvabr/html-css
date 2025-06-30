@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 2</title>
+    <style>
+        html, body {
+            font:normal normal 1em/1em Arial, sans-serif;
+        }
+        caption {
+            font: bold normal 1.5em Arial, sans-serif;
+        }
+        table, th, td {
+            padding: 20px;
+            border: 1px solid rgb(173, 173, 173);
+            border-collapse: collapse;
+        }
+        tr:nth-child(2n){ /* outros valores para o 2n: odd = impar e even = par*/
+            background-color: #EAECF0;
+        }
+        td.num {
+            text-align: right;
+            width: 10vw;
+        }
+        table {
+            width: 50vw;
+        }
+        thead, tfoot {
+            background-color:#525252;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        Hierarquia da Tabela
+        Table (Tabela)
+        [table]
+
+            Table head (Cabeça da tabela)
+                [thead]
+
+                    Table Row (Linha da Tabela)
+                    [tr]
+
+                        Table Data (Dado da Tabela)
+                        [td]
+                        Table Header (Cabeçalho da Tabela)
+                        [th]
+
+                Table body (Corpo da tabela)
+                [tbody]
+
+                    Table Row (Linha da Tabela)
+                    [tr]
+
+                        Table Data (Dado da Tabela)
+                        [td]
+                        Table Header (Cabeçalho da Tabela)
+                        [th]
+
+                Table foot (Pés da tabela)
+                [tfoot]
+
+                    Table Row (Linha da Tabela)
+                    [tr]
+
+                        Table Data (Dado da Tabela)
+                        [td]
+                        Table Header (Cabeçalho da Tabela)
+                        [th]
+    -->
+    <table>
+    <caption>População por Estados</caption>
+    <thead>
+        <tr>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num"><strong>45 973 194</strong></td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num"><strong>21 322 691</strong></td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num"><strong>17 219 679</strong></td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="num"><strong>14 850 513</strong></td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="num"><strong>11 824 665</strong></td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num"><strong>11 229 915</strong></td>
+        </tr>
+        <tr>
+            <td>Pernambuco</td>
+            <td class="num"><strong>9 539 029</strong></td>
+        </tr>
+        <tr>
+            <td>Ceará</td>
+            <td class="num"><strong>9 233 656</strong></td>
+        </tr>
+        <tr>
+            <td>Pará</td>
+            <td class="num"><strong>8 664 306</strong></td>
+        </tr>
+        <tr>
+            <td>Santa Catarina</td>
+            <td class="num"><strong>8 058 441</strong></td>
+        </tr>
+        <tr>
+            <td>Goiás</td>
+            <td class="num"><strong>7 350 483</strong></td>
+        </tr>
+        <tr>
+            <td>Maranhão</td>
+            <td class="num"><strong>7 010 960</strong></td>
+        </tr>
+        <tr>
+            <td>Amazonas</td>
+            <td class="num"><strong>4 281 209</strong></td>
+        </tr>
+        <tr>
+            <td>Paraíba</td>
+            <td class="num"><strong>4 145 040</strong></td>
+        </tr>
+        <tr>
+            <td>Espírito Santo</td>
+            <td class="num"><strong>4 102 129</strong></td>
+        </tr>
+        <tr>
+            <td>Mato Grosso</td>
+            <td class="num"><strong>3 836 399</strong></td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Norte</td>
+            <td class="num"><strong>3 446 071</strong></td>
+        </tr>
+        <tr>
+            <td>Piauí</td>
+            <td class="num"><strong>3 375 646</strong></td>
+        </tr>
+        <tr>
+            <td>Alagoas</td>
+            <td class="num"><strong>3 220 104</strong></td>
+        </tr>
+        <tr>
+            <td>Distrito Federal</td>
+            <td class="num"><strong>2 982 818</strong></td>
+        </tr>
+        <tr>
+            <td>Mato Grosso do Sul</td>
+            <td class="num"><strong>2 901 895</strong></td>
+        </tr>
+        <tr>
+            <td>Sergipe</td>
+            <td class="num"><strong>2 291 077</strong></td>
+        </tr>
+        <tr>
+            <td>Rondônia</td>
+            <td class="num"><strong>1 746 227</strong></td>
+        </tr>
+        <tr>
+            <td>Tocantins</td>
+            <td class="num"><strong>1 577 342</strong></td>
+        </tr>
+        <tr>
+            <td>Acre</td>
+            <td class="num"><strong>880 631</strong></td>
+        </tr>
+        <tr>
+            <td>Amapá</td>
+            <td class="num"><strong>802 837</strong></td>
+        </tr>
+        <tr>
+            <td>Roraima</td>
+            <td class="num"><strong>716 793</strong></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th scope="row">Total de Habitantes dos 27 estados</th>
+            <td class="num"><strong>212 583 750</strong></td>
+        </tr>
+    </tfoot>
+</table>
+
+
+</body>
+</html>
