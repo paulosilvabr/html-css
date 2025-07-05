@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela com Overflow Horizontal</title>
+  <style>
+    .tabela-container {
+      width: 100%;
+      overflow-x: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+      min-width: 1200px; /* Força overflow em telas menores */
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 8px 12px;
+      white-space: nowrap;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+    <h1>Loja Fictícia</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore reiciendis laborum alias at incidunt quae eaque eveniet suscipit perferendis possimus voluptate nostrum itaque, earum aperiam pariatur, debitis accusamus quis facilis nesciunt mollitia laudantium? Aspernatur, excepturi, nemo alias, dolor eaque illum fugit exercitationem suscipit at esse soluta ex a dolore ratione.</p>
+    
+    <h2>Lista de Clientes</h2>
+    <div class="tabela-container">
+        <table>
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Endereço</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+            <th>CEP</th>
+            <th>Data de Cadastro</th>
+            <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>001</td>
+            <td>Maria Silva</td>
+            <td>maria.silva@email.com</td>
+            <td>(11) 91234-5678</td>
+            <td>Rua A, 123</td>
+            <td>São Paulo</td>
+            <td>SP</td>
+            <td>01000-000</td>
+            <td>2023-01-15</td>
+            <td>Ativo</td>
+            </tr>
+            <tr>
+            <td>002</td>
+            <td>João Souza</td>
+            <td>joao.souza@email.com</td>
+            <td>(21) 99876-5432</td>
+            <td>Av. B, 456</td>
+            <td>Rio de Janeiro</td>
+            <td>RJ</td>
+            <td>20000-000</td>
+            <td>2023-03-22</td>
+            <td>Inativo</td>
+            </tr>
+            <tr>
+            <td>003</td>
+            <td>Carla Dias</td>
+            <td>carla.dias@email.com</td>
+            <td>(31) 98765-4321</td>
+            <td>Rua C, 789</td>
+            <td>Belo Horizonte</td>
+            <td>MG</td>
+            <td>30000-000</td>
+            <td>2023-06-10</td>
+            <td>Ativo</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando Colunas</title>
+    <style>
+        html, body {
+            font: normal normal 1em/1em Arial, sans-serif;
+        }
+        table {
+            border-collapse:collapse;
+        }
+        td, th {
+            padding: 10px;
+            border: 1px solid rgb(0, 0, 0);
+        }
+        .destaque {
+            background-color: aqua;
+        }
+        .destaque2 {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecionando Colunas</h1>
+    <table>
+        <colgroup>
+            <col class="destaque">
+            <col>
+            <col class="destaque2" span="2">
+            <col>
+        </colgroup>
+        <tr>
+            <th>teste</th>
+            <th>teste</th>
+            <th>teste</th>
+            <th>teste</th>
+        </tr>
+        <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+        </tr>
+        <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+        </tr>
+        <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+        </tr>
+        <tr>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+            <td>teste</td>
+        </tr>
+    </table>
+</body>
+</html>
