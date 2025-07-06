@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframe</title>
+    <style>
+        body {
+            font: normal normal 1em/1em Arial, sans-serif;
+        }
+        #quadro {
+            border: 1px solid black;
+            width: 98vw;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma Escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum fugit voluptatibus modi aspernatur eius provident excepturi earum laborum numquam et aut quis, repellat quasi incidunt laudantium possimus enim fuga accusamus sequi voluptate, nisi consequuntur amet aperiam? Cupiditate voluptatibus expedita, adipisci quis nobis quasi, velit cumque nesciunt rerum possimus quia qui sit. Natus, assumenda quidem saepe nam ex, a expedita, repellendus velit ut nihil itaque! Illum veniam sequi sint error. Aliquid, fugiat repudiandae blanditiis ullam accusamus dolores libero ea ex error dolor cumque est debitis consequuntur consectetur. Similique doloremque, modi dolorum suscipit, mollitia nulla repellat totam vel magnam, maiores asperiores sequi.</p>
+    <ul>
+        <li><a href="https://paulosilvabr.github.io/javascript/" target="frame">Primeira Página</a></li>
+        <li><a href="https://paulosilvabr.github.io/html-css/" target="frame">Segunda Página</a></li>
+        <li><a href="https://paulosilvabr.github.io/faculdade-atvd/" target="frame">Terceira Página</a></li>
+        <li><a href="pag-extra/pag01.html" target="frame">Teste de Página</a></li>
+    </ul>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, voluptate velit ducimus deserunt, animi officia reprehenderit aspernatur cum illo ullam dolores quaerat, corporis veritatis laborum harum? Eaque, dolore molestias molestiae placeat pariatur ducimus ratione eos voluptatem neque at dolorum magni quibusdam impedit non unde quae vel nam voluptates soluta qui officia ipsa. Tenetur, possimus esse maxime id unde natus in corrupti deleniti quia quas distinctio velit, saepe vel? Aspernatur reprehenderit illum vitae, illo error dolores saepe placeat ratione porro voluptatum facere explicabo ullam cum iste, laborum sequi repellat mollitia consequatur. Magni fuga molestias officia perspiciatis cumque mollitia illum ab nihil.</p>
+    
+    <!--  ID para estilizar no CSS -->
+
+    <!--  NAME para referenciar no TARGET no A -->
+
+    <!--  SRC para inserir conteudo (Seja local ou URL da internet) -->
+
+    <!--  SRCDOC para colocar tags HTML -->
+
+    <!--  FRAMEBORDER com valor = 0 ativa a borda padrão, valor != 0 desativa a borda padrão -->
+    <iframe 
+            
+        id="quadro" 
+    
+        name="frame" 
+    
+        src=""
+        
+        srcdoc="<h1>Escolha alguma opção nos links acima</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam temporibus, placeat harum dolorem ad natus similique ipsa explicabo, fugit neque ipsam aliquam, optio accusantium repellat culpa labore eaque perspiciatis voluptate?</p> <img src='#' alt='Imagem de exemplo'>"
+        
+
+        frameborder="0">
+        <p>Infelizmente seu navegador não é compatível</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laudantium mollitia tenetur neque, odio sunt animi eius aliquam impedit perspiciatis deserunt voluptatem non, alias, placeat molestiae repellat unde dolorum consequatur.
+    Sequi voluptatibus eaque tempore aperiam est sed temporibus libero autem suscipit impedit, expedita obcaecati, molestiae beatae doloremque optio qui hic veritatis provident. Fugit minima cupiditate repellat reprehenderit unde maiores tempora!</p>
+</body>
+</html>
