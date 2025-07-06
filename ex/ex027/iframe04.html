@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança com Iframe</title>
+</head>
+<body>
+    <h1>Meu Site Principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta delectus reprehenderit magni dolor vel consectetur nemo quis? Minus adipisci dolore, laudantium non, ratione, eligendi ipsa dolor maxime consequuntur totam at?</p>
+
+    <!-- SANDBOX é pra permitir ou não algumas coisas | valor = SANDBOX não permite nenhuma requisição e protege o Iframe 
+    
+    Quando você permite alguma coisa no iframe pelo SANDBOX só ela é permitida, o resto fica desativado
+    -->
+
+    <!-- REFERRERPOLICY valor = no-referrer o site não vai coletar informação do usuário -->
+    
+    <iframe src="pag-extra/pag02.html"
+
+    sandbox="allow-same-origin allow-forms" 
+    
+    referrerpolicy="no-referrer"
+    >
+        <p>Seu navegador não tem suporte!!</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sint minima atque ab rerum eveniet dicta ex numquam eum dolor, voluptate fugit dolorem, quisquam in tempore libero sed, molestiae error!</p>
+
+    <iframe src="pag-extra/pag03.html"
+    
+    sandbox="sandbox"
+
+    referrerpolicy="no-referrer"
+    >
+        <p>Seu navegador não é compatível</p>
+    </iframe>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            font: normal small-caps 1.1em/1.1em Arial, sans-serif;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="clicada()">Clique aqui!!</a>
+    <div id="saida"></div>
+
+    <script>
+        function clicada() {
+            var saida = document.querySelector('div#saida')
+            saida.innerHTML += '<p>Click Concluido</p>'
+        }
+    </script>
+</body>
+</html>
