@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Formulários</title>
+</head>
+<body>
+    <h1>Inicio de Formulários</h1>
+    <!--
+        só usa GET quando não passar de 3KB e quando os dados não forem sensíveis.
+    -->
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="Nome">Nome: </label>
+            <input type="text" name="Nome" id="Nome">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>

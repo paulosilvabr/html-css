@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="num1">Número: </label>
+            <input type="number" name="num1" id="num1"
+            min="0"
+            max="50"
+            oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)"
+            required
+            >
+        </p>
+        <p>
+            <label for="num2">Número: </label>
+            <input type="number" name="num2" id="num2"
+            min="0"
+            max="50"
+            oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)"
+            required
+            >
+        </p>
+        <p>
+            <label for="soma">A soma é: </label>
+            <output name="soma" id="soma">0</output>
+            <!-- Serve só pra mostrar dados na tela -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        optgroup[label="Região Norte"] {
+            color: white;
+            background-color: #68AC6A;
+        }
+        optgroup[label="Região Nordeste"] {
+            color: white;
+            background-color: #FEC200;
+        }
+        optgroup[label="Região Centro-Oeste"] {
+            color: white;
+            background-color: #A1C137;
+        }
+        optgroup[label="Região Sudeste"] {
+            color: white;
+            background-color: #DB9119;
+        }
+        optgroup[label="Região Sul"] {
+            color: white;
+            background-color: #24b1ca;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="#" method="post">
+        <!-- SELECT -->
+        <p>
+            <label for="estado">Estado: </label>
+            <select name="estado" id="estado"
+            required
+            >
+                <option value="" 
+                selected
+                >
+                &lt;-- Escolha --&gt;
+                </option>
+                <optgroup label="Região Norte">
+                    <option value="ac">Acre</option>
+                    <option value="ap">Amapá</option>
+                    <option value="pa">Pará</option>
+                    <option value="ro">Rodônia</option>
+                    <option value="rr">Roraima</option>
+                    <option value="to">Tocantins</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="al">Alagoas</option>
+                    <option value="ba">Bahia</option>
+                    <option value="ce">Ceará</option>
+                    <option value="ma">Maranhão</option>
+                    <option value="pb">Paraíba</option>
+                    <option value="pe">Pernambuco</option>
+                    <option value="pi">Piauí</option>
+                    <option value="rn">Rio Grande do Norte</option>
+                    <option value="se">Sergipe</option>
+                </optgroup>
+                <optgroup label="Região Centro-Oeste">
+                    <option value="go">Goiás</option>
+                    <option value="mt">Mato Grosso</option>
+                    <option value="ms">Mato Grosso do Sul</option>
+                    <option value="df">Distrito Federal</option>
+                </optgroup>
+                <optgroup label="Região Sudeste">
+                    <option value="es">Espírito Santo</option>
+                    <option value="mg">Minas Gerais</option>
+                    <option value="rj">Rio de Janero</option>
+                    <option value="sp">São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="pr">Paraná</option>
+                    <option value="rs">Rio Grande do Sul</option>
+                    <option value="sc">Santa Catarina</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="form">Formação: </label>
+            <input type="text" name="form" id="form"
+            list="lstform"
+            >
+            <datalist id="lstform">
+                <optgroup label="Bacharel">
+                    <option>Física (Bacharel)</option>
+                    <option>Mecatrônica</option>
+                    <option>Contabilidade</option>
+                </optgroup>
+                <optgroup label="Licenciatura">
+                    <option>Física (Licenciatura)w</option>
+                    <option>Educação Física</option>
+                    <option>História</option>
+                </optgroup>
+                <optgroup label="Tecnólogo">
+                    <option>Sistema para Internet</option>
+                    <option>Análise e Desenvolvimento de Sistema</option>
+                    <option>Redes de Computadores</option>
+                </optgroup>
+            </datalist>
+        </p>
+        <!-- TEXTAREA -->
+        <p>
+            <label for="msg">Insira Sua Mensagem: </label>
+        </p>
+        <p>
+            <textarea name="msg" id="msg"
+            rows="15"
+            cols="30"
+            style="resize: none;"
+            >
+            </textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

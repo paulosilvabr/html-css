@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu Formulário</h1>
+    <form action="cadastro.php"
+    method="get"
+    autocomplete="on"
+    >   
+        
+        <fieldset>
+            
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome"
+                autocomplete="name"
+                minlength="5"
+                maxlength="15"
+                required
+                >
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email"
+                autocomplete="email"
+                required
+                >
+            </p>
+            <!--
+                ATRIBUTO PATTERN
+                \(?([1-9]{2})\)?: DDD com ou sem parênteses, evitando 00 como DDD inválido.
+                \s?: espaço opcional.
+                9[0-9]{4}: começa com 9 (celular) e mais 4 dígitos.
+                -[0-9]{4}: hífen seguido de 4 dígitos.
+                -->
+                <p>
+                    <label for="tel">Telefone: </label>
+                    <input type="tel" name="tel" id="tel"
+                    pattern="\(?([1-9]{2})\)?\s?9[0-9]{4}-[0-9]{4}"
+                    placeholder="(XX)XXXXX-XXXX"
+                    autocomplete="tel"
+                    required
+                    >
+                </p>
+            </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

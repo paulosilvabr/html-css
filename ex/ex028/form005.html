@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <p>
+                <input type="checkbox" name="fut" id="fut"> <label for="fut">Futebol</label>
+                <input type="checkbox" name="bas" id="bas"> <label for="bas">Basquete</label>
+                <input type="checkbox" name="vol" id="vol" checked> <label for="vol">Volei</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <label for="sxm">Masculino</label>
+                <input type="radio" name="sexo" id="sxm"
+                value="M"
+                checked
+                >
+                <label for="sxf">Feminino</label>
+                <input type="radio" name="sexo" id="sxf"
+                value="F"
+                >
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
