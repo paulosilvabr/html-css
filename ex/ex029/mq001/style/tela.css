@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/* Estilo para Telas */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font: normal normal 1.2em/1.2em Arial, sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    padding: 15px;
+    background-color: lightgray;
+    font-variant: small-caps;
+}
+header menu {
+    background-color: rgb(93, 106, 119);
+    text-align: center;
+}
+header menu li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(78, 78, 78);
+    color: white;
+    border-radius: 50px;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+}
+

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* Estilo para Impressora */
+
+* {
+    padding: 10px;
+    margin: 10px;
+}
+
+html {
+    font: normal normal 1.2em/1.2em 'Courrier New', monospace;
+}
+
+menu {
+    display: none;
+}
+
+article::after {
+    content: 'Esse site foi imprimido em algum dia de 2025 (isso se quem imprimiu está em 2025)';
+    font: normal normal 0.7em/1em Arial, sans-serif;
+}

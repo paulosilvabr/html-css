@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* Estilo Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: #233EFF;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
