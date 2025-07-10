@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/* TODOS OS OUTROS DISPOSITIVOS */
+
+@media print {
+    img#ico-phone {
+        display: none;
+    }
+    img#ico-print {
+        display: inline-block;
+    }
+}
