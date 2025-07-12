@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*
+
+    TYPICAL DEVICE BREAKPOINTS 
+    (Font: W3C 2025)
+
+    Extra small devices
+    (phones)
+    (--- and 600px) 
+
+    Small devices
+    (portrait tablets and large phones)
+    (600px and ---)
+
+    Medium devices
+    (landscape tablets)
+    (768px and ---)
+
+    Large devices
+    (laptops/desktops)
+    (992px and ---)
+
+    Extra large devices
+    (large laptops and desktops)
+    (1200px and ---)
+
+*/
+
+@media screen and (min-width: 768px) {
+    span#menuIco {
+        display: none;
+    }
+    menu {
+        display: block;
+        text-align: center;
+    }
+    menu li {
+        display: inline-block;
+    }
+    menu a {
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    main {
+        max-width: 800px;
+    }
+}

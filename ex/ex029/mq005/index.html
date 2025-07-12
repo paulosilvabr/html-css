@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querry</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-querry.css">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <span id="menuIco" class="material-symbols-outlined">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Querry</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem pariatur deleniti animi cupiditate similique? Quae laboriosam soluta, maxime ratione non consequuntur doloremque ipsam, et eum voluptatibus qui omnis labore beatae nostrum, placeat accusantium voluptates. Unde dolorum quidem fugiat laudantium consequatur nemo maiores. Sint tempore excepturi placeat quas veniam, maxime temporibus at reiciendis, possimus neque mollitia nisi commodi illum perspiciatis fugit vero facilis distinctio exercitationem. Beatae adipisci hic, dolore accusamus placeat consequatur excepturi cum ipsum sapiente libero, amet commodi, numquam ex. Dolorum qui optio voluptate, architecto suscipit reiciendis perferendis corporis nesciunt sint dolore fugiat illum facere perspiciatis est! Omnis, laudantium consequatur.</p>
+            <p>Laudantium itaque voluptatum voluptas provident debitis similique quis id? Impedit, accusamus? Velit sed quam eligendi cumque, earum incidunt dolorum tempora dolorem voluptate quas reprehenderit rem sunt cum, magni distinctio ea nesciunt vel, autem architecto laborum beatae maxime. Impedit cupiditate autem, nesciunt quo ad illo vero aut nulla fugiat nisi distinctio ipsa nobis quia in, mollitia cumque. Illo temporibus dicta adipisci, nulla aspernatur, officiis impedit ducimus odio natus aliquid consectetur praesentium cupiditate nihil sunt repellendus alias ullam explicabo saepe magnam! Vitae velit porro quae incidunt est. Reiciendis officia animi, tenetur earum tempore eos provident voluptatum itaque harum sed. Officiis, quam repellendus.</p>
+            <p>Natus id corporis consequatur aperiam repudiandae enim, laudantium perspiciatis repellendus. Maxime nemo facilis quasi? Soluta, reprehenderit libero. Fuga unde molestiae, praesentium impedit nihil est et magni? Esse ipsam quidem at ad maxime necessitatibus cumque aliquam? Aperiam laborum nesciunt sequi distinctio consequatur. Nostrum eveniet ab id eaque placeat hic deserunt atque quaerat, veniam nesciunt modi, neque fuga laborum. Optio, corporis. Esse consectetur voluptas nulla nemo magni id hic maxime itaque, in quae dignissimos, explicabo unde aperiam doloremque consequatur aliquid dolores rerum. Accusantium odit velit, nostrum cum alias tenetur consectetur dignissimos sunt saepe quo! Ad, corrupti? Tempore corporis voluptate odio autem? Modi.</p>
+            <p>Beatae, commodi quas magni dolores sequi quis modi numquam, eaque culpa laborum quo assumenda perspiciatis corrupti sit vel? Ipsam asperiores, at ab optio et ut aperiam dolorum voluptatibus repellat aut veritatis, harum facilis enim id earum! Ipsa earum eius commodi eveniet odio neque nobis ullam. Quaerat esse cupiditate suscipit deleniti necessitatibus impedit adipisci, nostrum hic dolorum temporibus id est, facere a totam iste? Non dolorem sint recusandae, nulla quod, eum enim officia odit ad nostrum doloremque. Deleniti veritatis dolor quae, laudantium quibusdam soluta totam. Pariatur sed reprehenderit exercitationem quibusdam animi quisquam sint quos, praesentium dolorum alias odit repudiandae molestiae atque?</p>
+        </article>
+    </main>
+    <script>
+        var botaoMenu = document.querySelector('span#menuIco')
+        
+        botaoMenu.addEventListener('click', menu)
+        window.addEventListener('resize', tamanhoTela)
+        
+        function tamanhoTela() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function menu() {
+            if (itens.style.display == 'none') {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
