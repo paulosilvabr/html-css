@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            background-color: lightcyan;
+        }
+        div.container {
+            background-color: salmon;
+            height: 120px;
+
+            /* Flexbox */
+            display: flex;
+
+            /* Shorthand recomendado pela W3C */
+            flex-flow: column wrap-reverse;
+
+            /*
+            *   flex-direction: row-reverse;
+            *   flex-wrap: wrap; -----> Vai SEMPRE na direção do Cross-Axis
+            */
+        }
+        div.item {
+            background-color: aqua;
+            border: 1px solid black;
+            padding: 10px;
+
+            /* Flexbox */
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Exemplo de item A</div>
+        <div class="item">Exemplo de item B</div>
+        <div class="item">Exemplo de item C</div>
+        <div class="item">Exemplo de item D</div>
+        <div class="item">Exemplo de item E</div>
+        <div class="item">Exemplo de item F</div>
+        <div class="item">Exemplo de item G</div>
+    </div>
+</body>
+</html>
