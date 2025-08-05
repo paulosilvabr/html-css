@@ -17,14 +17,44 @@ header {
     background-color: gray;
     padding: 10px;
     color: white;
+
+    /* FLEXBOX */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 header > h1 {
-    border: 1px dashed black;
+    /*border: 1px dashed black;*/
+
+    /* FLEXBOX */
+    flex: 0 0 200px;
 }
 
 header > nav {
-    border: 1px dashed black;
+    /*border: 1px dashed black;*/
+
+    /* FLEXBOX */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header > nav > a {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color .4s, color .4s;
+
+    /* FALEXBOX */
+    
+}
+
+header > nav > a:hover {
+    background-color: white;
+    color: black;
 }
 
 main {
