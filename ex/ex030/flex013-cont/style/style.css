@@ -39,7 +39,6 @@ header > h1 {
 main  p {
     text-align: justify;
     text-indent: 20px;
-    
 }
 
 main {
@@ -57,7 +56,7 @@ main > article > section.flex1 {
 
 main > article > section.flex1 > p {
     /* Flexbox */
-    flex: 1 0 740px;
+    flex: 1 1 740px;
 }
 
 main > article > section.flex2 {
@@ -70,7 +69,12 @@ main > article > section.flex2 {
 
 main > article > section.flex2 > p {
     /* Flexbox */
-    flex: 1 0 400px;
+    flex: 1 1 400px;
+}
+
+div.video, div.video > iframe {
+    max-width: 560px;
+    width: 100%;
 }
 
 footer {
